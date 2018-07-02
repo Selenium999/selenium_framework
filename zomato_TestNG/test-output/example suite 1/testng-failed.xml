@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [example suite 1]">
+  <test name="Regression suite 1(failed)">
+    <parameter name="url" value="https://www.zomato.com/pune"/>
+    <classes>
+      <class name="com.zomato.WebPages.ZomatoRegistration">
+        <methods>
+          <include name="login_zomato" invocation-numbers="1 2"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.zomato.WebPages.ZomatoRegistration -->
+    </classes>
+  </test> <!-- Regression suite 1(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Zomato Test Automation Test Suite]">
+  <test name="Zomato Tetscases(failed)">
+    <parameter name="firstname" value="Ahilya"/>
+    <parameter name="password" value="ahilya123"/>
+    <parameter name="city" value="Pune"/>
+    <parameter name="search_string" value="Mainland China"/>
+    <parameter name="email" value="kahilya@gmail.com"/>
+    <parameter name="lastname" value="Kulkarni"/>
+    <classes>
+      <class name="com.zomato.TestCases.GeneralUserHomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="loginZomato" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.zomato.TestCases.GeneralUserHomePageTest -->
+    </classes>
+  </test> <!-- Zomato Tetscases(failed) -->
+</suite> <!-- Failed suite [Zomato Test Automation Test Suite] -->

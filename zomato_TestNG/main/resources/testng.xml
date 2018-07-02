@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Zomato Test Automation Test Suite" verbose="1" >
+
+<test name="Zomato Tetscases" >
+
+<parameter name="search_string" value="Mainland China" />
+<parameter name="city" value="Pune" />
+
+
+<classes>
+<class name="com.zomato.TestCases.GeneralUserHomePageTest"></class>
+</classes>
+</test>
+
+
+</suite>

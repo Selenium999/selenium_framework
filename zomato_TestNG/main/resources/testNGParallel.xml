@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Zomato Sign-In/SignUp Suite" verbose="2" parallel="methods" thread-count="2">
+
+<test name="Regression Registration on firefox" parallel="instances" thread-count="1" >
+
+<parameter name="url" value="https://www.zomato.com/pune" />
+<parameter name="browser" value="firefox" />
+
+<classes>
+<class name="com.zomato.WebPages.ZomatoRegistration"></class>
+</classes>
+</test>
+
+<test name ="Regression Registration on chrome" parallel="methods" thread-count="2" >
+
+<parameter name="url" value="https://www.zomato.com/pune" />
+<parameter name="browser" value="chrome" />
+
+<classes>
+<class name="com.zomato.WebPages.ZomatoRegistration"/>
+
+</classes>
+</test>
+</suite>
